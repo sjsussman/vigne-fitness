@@ -3,9 +3,12 @@ import "../../styles/styles.scss";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Test</h1>
-    </div>
+    <>
+      <div className="home-container">
+        <div className="sidebar"></div>
+        <div className="photo-container"></div>
+      </div>
+    </>
   );
 };
 
