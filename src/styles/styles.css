@@ -1,3 +1,76 @@
+#logo {
+  width: 158px;
+  height: 100px;
+}
+
+.navigation {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 5vh 5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 1vw;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  position: relative;
+  font-weight: 600;
+}
+
+.link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: crimson;
+  height: 1px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.link:hover {
+  color: crimson;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
 h1 {
   font-size: 3rem;
   display: -webkit-box;
