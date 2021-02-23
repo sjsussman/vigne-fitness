@@ -1,3 +1,9 @@
+$primaryColor: rgb(0, 20, 39);
+$secondaryColor: rgb(112, 141, 129);
+$thirdColor: rgb(244, 213, 141);
+$fourthColor: rgb(191, 6, 3);
+$fifthColor: rgb(141, 8, 1);
+
 @mixin flexSpaceBetween($direction) {
   display: flex;
   flex-direction: $direction;
@@ -16,7 +22,7 @@
   position: relative;
   text-transform: uppercase;
   margin: 0 auto;
-  padding: 5vh 5vw;
+  padding: 3vh 5vw;
   align-items: center;
   @media (max-width: 768px) {
     position: sticky;
@@ -30,7 +36,7 @@
 
 .link {
   text-decoration: none;
-  color: black; //111
+  color: $secondaryColor; //111
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;

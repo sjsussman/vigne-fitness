@@ -5,8 +5,15 @@ const Home = () => {
   return (
     <>
       <div className="home-container">
-        <div className="sidebar"></div>
-        <div className="photo-container"></div>
+        <div className="sidebar">
+          <h2>
+            "THERE ARE NO LIMITS TO WHAT YOU CAN ACCOMPLISH, EXCEPT THE LIMITS
+            YOU PLACE ON YOUR OWN THINKING"
+          </h2>
+        </div>
+        <div className="photo-container">
+          <h1>PHOTO CONTAINER</h1>
+        </div>
       </div>
     </>
   );

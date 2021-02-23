@@ -11,7 +11,7 @@ function App() {
     <>
       <NavigationBar />
       <Switch>
-        <Route path="/contact-us">
+        <Route path="/inquiries">
           <Inquiries />
         </Route>
         <Route path="/mission">

@@ -1,14 +1,35 @@
+$primaryColor: rgb(0, 20, 39);
+$secondaryColor: rgb(112, 141, 129);
+$thirdColor: rgb(244, 213, 141);
+$fourthColor: rgb(191, 6, 3);
+$fifthColor: rgb(141, 8, 1);
+
 .home-container {
   display: flex;
+  overflow: hidden;
+  max-height: 84vh;
+  max-width: 100%;
 }
 
 .photo-container {
-  width: 70%;
-  height: 90vh;
-  border: 1px solid red;
+  width: 80%;
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  h1 {
+    color: blanchedalmond;
+  }
 }
 .sidebar {
-  width: 30%;
-  height: 90vh;
+  width: 20%;
+  height: 83vh;
   border: 1px solid black;
+  background-color: $fifthColor;
+  display: flex;
+
+  align-items: center;
+  h2 {
+    color: blanchedalmond;
+    padding: 15%;
+  }
 }

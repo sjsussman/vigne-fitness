@@ -1,15 +1,23 @@
 @import "./navbar";
 @import "./home";
-$primaryColor: rgb(182, 85, 153);
-$secondaryColor: rgb(182, 85, 153);
-$thirdColor: rgb(182, 85, 153);
+$primaryColor: rgb(0, 20, 39);
+$secondaryColor: rgb(112, 141, 129);
+$thirdColor: rgb(244, 213, 141);
+$fourthColor: rgb(191, 6, 3);
+$fifthColor: rgb(141, 8, 1);
 @mixin flexCenter($direction) {
   display: flex;
   flex-direction: $direction;
   justify-content: center;
   align-items: center;
 }
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: $primaryColor;
+}
 h1 {
   font-size: 3rem;
   @include flexCenter(row);
