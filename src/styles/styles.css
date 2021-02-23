@@ -47,6 +47,7 @@
   transition: all 200ms ease-in;
   position: relative;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .link::after {
@@ -69,6 +70,24 @@
 
 .link:hover::after {
   width: 100%;
+}
+
+.home-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photo-container {
+  width: 70%;
+  height: 90vh;
+  border: 1px solid red;
+}
+
+.sidebar {
+  width: 30%;
+  height: 90vh;
+  border: 1px solid black;
 }
 
 h1 {
