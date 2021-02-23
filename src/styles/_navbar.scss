@@ -1,0 +1,58 @@
+@mixin flexSpaceBetween($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 158px;
+  height: 100px;
+}
+
+.navigation {
+  height: 10vh;
+  @include flexSpaceBetween(row);
+  background-color: white;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 5vh 5vw;
+  align-items: center;
+  @media (max-width: 768px) {
+    position: sticky;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black; //111
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 1vw;
+  transition: all 200ms ease-in;
+  position: relative;
+  font-weight: 600;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: rgb(220, 20, 60);
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
+  &:hover {
+    color: rgb(220, 20, 60);
+    &::after {
+      width: 100%;
+    }
+  }
+}
