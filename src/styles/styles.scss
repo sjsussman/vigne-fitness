@@ -1,0 +1,12 @@
+@import "./navbar"; // $primaryBtn: rgb(182, 85, 153);
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  @include flexCenter(row);
+}
